@@ -43,6 +43,16 @@
             <svg><use xlink:href="#icon-linkedin"></use></svg>
           </a>
         {% endif %}
+        {% if author.youtube_username %}
+        <a href="https://www.youtube.com/channel/{{ author.youtube_username }}" title="YouTube">
+          <svg><use xlink:href="#icon-youtube"></use></svg>
+        </a>
+        {% endif %}
+        {% if author.devto_username %}
+        <a href="https://dev.to/{{ author.devto_username }}" title="Dev">
+          <svg><use xlink:href="#icon-dev-dot-to"></use></svg>
+        </a>
+        {% endif %}
       </p>
     </div>
   </section>
@@ -66,6 +76,13 @@
   {% if author.linkedin_username %}
       {% assign author_urls = author_urls | append: '"https://www.linkedin.com/in/' | append: author.linkedin_username | append: '",' %}
   {% endif %}
+  {% if author.youtube_username %}
+    {% assign author_urls = author_urls | append: '"https://www.youtube.com/channel/' | append: author.youtube_username | append: '",' %}
+  {% endif %}
+  {% if site.devto_username %}
+    {% assign social_urls = social_urls | append: '"https://dev.to/' | append: site.devto_username | append: '",' %}
+  {% endif %}
+
 
   <script type="application/ld+json">
   {

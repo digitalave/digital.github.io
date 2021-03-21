@@ -1,13 +1,18 @@
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: Digital Avenue IT
+title: Digital Avenue IT | Verified DevOps Tutorials For Docker Kubernetes Azure Amazon Jenkins and System Administrator Tutorials
+description: Digital Avenue IT Verified DevOps IT Admin Tutorials For Kubernetes, Azure, Jenkins, Docker, Linux, PfSense, Git, AWS and more. Learn DevOps Now.
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - DevOps
+  - Digital Avenue
+  - Tutorial
+  - IT
+  - Kubernete
+  - Azure
+  - Amazon
+  - Jenkins
+  - Docker
+  - HowTo
+  - DevOps Tutorials
 show_hero: true
 menu:
   - title: Home
@@ -19,4 +24,5 @@ menu:
   - title: Feed
     url: /feed.xml
 email: youremail@test.com
-disqus_username: disqus_username
+#disqus_username: disqus_username
+#paginate: 12
